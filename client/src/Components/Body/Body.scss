@@ -1,0 +1,60 @@
+// Body.scss
+
+$table-background: #f2f2f2;
+$table-hover-background: #ddd;
+$button-background: #4caf50;
+$button-hover-background: #45a049;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: $table-background;
+  }
+
+  tr:nth-child(even) {
+    background-color: $table-background;
+  }
+
+  tr:hover {
+    background-color: $table-hover-background;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: $button-background;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  button:hover {
+    background-color: $button-hover-background;
+  }
+}
+.table-container {
+  max-height: 300px; // Adjust the height as needed
+  overflow-y: auto;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
